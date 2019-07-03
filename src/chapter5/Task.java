@@ -32,10 +32,27 @@ public class Task {
 	
 	/*
 	 * 3. 编写一个方法，输出大于200的最小的质数。
-	 * 
+      *https://blog.csdn.net/afei__/article/details/80638460
+      *  概念：
+      *      质数又称素数。一个大于1的自然数，除了1和它自身外，
+      *      不能被其他自然数整除的数叫做质数；否则称为合数。
+     *   0和1既不是质数也不是合数，最小的质数是2
 	 */
-	public static void primeNumber() {
-		
+	public static void primeNumber() {//大于200的最小的质数是： 211
+	    for (int i = 200;; i++) {
+            boolean temp = true;//定义一个初始变量
+            for (int j = 2; j < i; j++) {
+                if(i%j == 0) {//能够被整除是合数，则跳过此数
+                    System.out.println(i + " 是合数能够被数值  "+j + "  整除");
+                    temp = false;
+                    continue;
+                }
+            }
+            if(temp) {
+                System.out.println("大于200的最小的质数是： "+i);
+                break;
+            }
+        }
 	}
 	
 	/*
@@ -59,6 +76,7 @@ public class Task {
 	public static void main(String[] args) {
 //		factorial(6);//1
 //		isLeapYear(0);//2
+//		primeNumber();//3
 //		int[] arr = {5,7,9,2};//4
 //		bubbleSort(arr);//4
 	}
