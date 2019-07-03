@@ -358,12 +358,12 @@ public class Task {
 		if(num < 1) {
 			System.out.println("请输入一个大于0的整数");
 		}else {
-//			if(num == 1) {
-//				
-//			}else {
-//				long facNum = num * factorial(num - 1);
-//			}
-			
+//			long facNum = num * factorial(num - 1);
+			long resultNum = 1;
+			for (int i = 1; i < num + 1; i++) {
+				resultNum *= i;
+			}
+			System.out.println(num + "  的阶乘是： " + resultNum );
 		}
 	}
 	
@@ -374,10 +374,23 @@ public class Task {
 	  *      质数又称素数。一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数；否则称为合数。
 	 *   0和1既不是质数也不是合数，最小的质数是2
 	 */
-	
+	public static void primeNum() {//大于200的最小的质数是： 211
+		for (int i = 200;; i++) {
+			boolean temp = true;//定义一个初始变量
+			for (int j = 2; j < i; j++) {
+				if(i%j == 0) {//能够被整除是合数，则跳过此数
+					System.out.println(i + " 是合数能够被数值  "+j + "  整除");
+					temp = false;
+					continue;
+				}
+			}
+			if(temp) {
+				System.out.println("大于200的最小的质数是： "+i);
+				break;
+			}
+		}
+	}
 
-
-	
 	/*
 	 * 17. 由命令行输入一个4位整数，求将该数反转以后的数，如原数为1234，反转后的数位4321
 	  *  此处我就不从命令行输入数字咯。。。。没有原因。。。因为就是懒。。。
@@ -413,8 +426,8 @@ public class Task {
 //		sum_while();//13
 //		sum_doWhile();//13
 //		outputNum();//14
-		
-		
+//		factorial(5);//15
+		primeNum();//16
 //		reverseNum(3461);//17
 		
 		

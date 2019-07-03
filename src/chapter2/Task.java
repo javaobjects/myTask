@@ -63,7 +63,7 @@ public class Task {
 	}
 	public static void main(String[] args) {
 //		variableInterchange(5,7);
-		variableInterchange2(8, 3);
+//		variableInterchange2(8, 3);
 //		sumNumevery();
 //		temperatureInterchange(50);
 //		toLowerCase('B');
