@@ -10,9 +10,9 @@ public class Vehicle {
 //	2.1.4 定义一个一般方法run()，用打印语句描述汽车奔跑的功能
 //	2.1.5 在main方法中创建一个品牌为“benz”、颜色为“black”的汽车。
 	
-	private String brand;//汽车品牌
-	private String color;//颜色
-	private double speed;//速度
+	String brand;//汽车品牌
+	String color;//颜色
+	double speed;//速度
 	
 	public Vehicle() {
 		super();
@@ -62,6 +62,4 @@ public class Vehicle {
 		System.out.println(vehicle.toString());//不写toString也行，因为会默认调用toString方法
 		vehicle.run();
 	}
-	
-	
 }
