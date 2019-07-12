@@ -1,5 +1,7 @@
 package highchapter1;
 
+import java.util.Scanner;
+
 public class Task {
 	
 	/*
@@ -83,6 +85,46 @@ public class Task {
 	 * 5.2实现步骤：
 	 * 5.2.1创建一个类，类名：mailtest
 	 */
+	
+	public static void mailtest() {
+		//假定此 处就是mailtest类
+		System.out.println("请输入你的邮箱名字");
+		Scanner scanner = new Scanner(System.in);
+		String email = scanner.next();
+		// 5.1.1邮箱地址中不包含@或. 
+		if(email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+			System.out.println("邮箱中不包含'@'或'.',不合法");
+			return;
+		}
+		//5.1.2邮箱地址中含有多了@或. 
+		if(email.indexOf("@") != email.lastIndexOf("@") || email.indexOf(".") != email.lastIndexOf(".")) {
+			System.out.println("邮箱中包含多个'@'和'.',不合法");
+			return;
+		}
+		//5.1.3邮箱地址中.出现在@的前面
+		if(email.indexOf(".") < email.indexOf("@")) {
+			System.out.println("邮箱中'.'在'@'前面,不合法");
+			return;
+		}
+		//5.1.4用户名里有其他字符 
+		/**
+		 * 只能包含 0 ~ 9 a ~ z A ~ Z
+		 * 0 对应的ASCII码十进制值为 ：48
+		 * A对应的ASCII码十进制值为：65
+		 * a对应的ASCII码十进制值为：97
+		 */
+		for (int i = 0; i < email.indexOf("@"); i++) {
+			if(email.charAt(i) > '0' && email.charAt(i) < '9' || 
+					email.charAt(i) > 'A' && email.charAt(i) < 'Z' ||
+					email.charAt(i) > 'a' && email.charAt(i) < 'z') {
+//				System.out.println("邮箱合法");
+			}else {
+				System.out.println("邮箱不合法，用户名里有其他字符 ");
+			}
+		}
+	}
+	
+	
 	
 	/*
 	 * 6、分别在控制台输入字符串和子字符串，并计算字符串中子字符串出现的次数
@@ -173,6 +215,7 @@ public class Task {
 //		countWorde();//2
 //		RandomNumAndSortOutput();//3
 //		getLocTime();//4
+//		mailtest();//5
 //		countWord();//6
 //		countZhEnNum();//7
 //		isPalindromeNumber();//8
