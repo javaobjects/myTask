@@ -16,7 +16,7 @@ public class Server {
 	 *a-z 97-122
 	 *第33～126号(共94个)是字符，其中第48～57号为0～9十个阿拉伯数字
 	 */
-	public static SumStrAscii(String str) {
+	public static StringBuffer SumStrAscii(String str) {
 //		byte[] bytestr = str.getBytes();
 //		int sum = 0;
 //		for(int i=0;i<bytestr.length;i++){
@@ -63,10 +63,10 @@ public class Server {
 				//此处可以将元素转换成asii码 数字有专门的asii码范围
 				for(int i = 0;i < strArray.length;i++) {
 //					System.out.println(strArray[i]);
-					if(SumStrAscii(strArray[i])<48 && SumStrAscii(strArray[i]) > 57) {
-						bl = true;
-						break;
-					}
+//					if(SumStrAscii(strArray[i])<48 && SumStrAscii(strArray[i]) > 57) {
+//						bl = true;
+//						break;
+//					}
 				}
 				if(!bl) {
 					//此处需要将数组转成字符串
