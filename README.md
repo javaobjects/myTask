@@ -109,7 +109,7 @@ public class Client {
 }
 ```
 效果如下：
-![](https://upload-images.jianshu.io/upload_images/5227364-b44aa9de2a8114cd.gif?imageMogr2/auto-orient/strip)
+![](images/1.gif)
 
 
 
@@ -124,10 +124,12 @@ public class Client {
 
 实现效果如图：
 图1：服务器端效
-![](https://upload-images.jianshu.io/upload_images/5227364-ca350518157eb834.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-图2：客户器端效果：
-![](https://upload-images.jianshu.io/upload_images/5227364-ea72ce93efcba813.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+![](images/1.png)
+
+图2：客户器端效果：
+
+![](images/2.png)
 
 ```
 package highchapter5;
@@ -304,22 +306,20 @@ public class Send implements Runnable {
 	}
 }
 ```
-![](https://upload-images.jianshu.io/upload_images/5227364-8439573300b3c78b.gif?imageMogr2/auto-orient/strip)
+
+![](images/2.gif)
 
 #### 扩展知识：
 
 [JAVA基本数据类型及其对应的包装类](https://blog.csdn.net/yangyechi/article/details/82530447)
 
-<<<<<<< HEAD
-=======
 [StarUML使用简明教程](https://blog.csdn.net/luansha0/article/details/82260678)
 
 [如何使用staruml画用例图](https://jingyan.baidu.com/article/e8cdb32b5cdf9137052bad93.html)
->>>>>>> NO.7-1
 
 ==================================================================
 #### 分割线
 ==================================================================
 **博主为咯学编程：父母不同意学编程，现已断绝关系;恋人不同意学编程，现已分手;亲戚不同意学编程，现已断绝来往;老板不同意学编程,现已失业三十年。。。。。。如果此博文有帮到你欢迎打赏，金额不限。。。**
 
-![](https://upload-images.jianshu.io/upload_images/5227364-e76764b127f255ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](images/pay.png)
